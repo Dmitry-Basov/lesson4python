@@ -7,6 +7,7 @@ def prime(n):
     while i < n and flag:
         if n % i == 0:
             flag = False
+            break
         i += 1
     if flag:
         return 'yes'
