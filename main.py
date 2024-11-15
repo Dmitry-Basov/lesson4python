@@ -30,17 +30,17 @@
 
 #Быстрая сортировка
 # def quick_sort(array):
-#     if len(array) <= 1:
-#         return array
+#     if len(array) <= 1: # если длина массива меньше либо равна 1
+#         return array    # то возвращаем массив как есть, без обработки
 #     else:
-#         pivot = array[0]
-#     less = [i for i in array[1:] if i <= pivot]
-#     greater = [i for i in array[1:] if i > pivot]
-#     return quick_sort(less) + [pivot] + quick_sort(greater)
+#         pivot = array[0] # берем первый элемент как опорный
+#     less = [i for i in array[1:] if i <= pivot] # если опорный объект больше текущего, то добавляем элемент в правую часть
+#     greater = [i for i in array[1:] if i > pivot] # если опорный объект меньше текущего, то добавляем элемент в левую часть
+#     return quick_sort(less) + [pivot] + quick_sort(greater) # отправляем на
 
 # print(quick_sort([14,5,9,6,33,58,7,5,2,7]))
 
-#Cортировка слиянием(разбиение по парам, потом из них составляются новые пары,пары пар и т.д. где значения идут в порядке возрастания)
+# #Cортировка слиянием(разбиение по парам, потом из них составляются новые пары,пары пар и т.д. где значения идут в порядке возрастания)
 # def merge_sort(nums):
 #     if len(nums) > 1:
 #         mid = len(nums) // 2
