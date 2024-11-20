@@ -1,0 +1,1 @@
+if i != j and list1[i] == list1[j]:
